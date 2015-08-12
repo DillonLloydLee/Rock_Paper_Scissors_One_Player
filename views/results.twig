@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Rock Paper Scissors Game!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1 class="text-center">Rock Paper Scissors Game!</h1>
+        <hr>
+        <h2 class="text-center">{{ gameinfo }}</h2>
+
+        {% if gameinfo == "Player One Wins!" or gameinfo == "Player Two Wins!" %}
+            <center><img src="http://static1.squarespace.com/static/548f39d4e4b09248deea77fc/t/54946c58e4b0a875f15aafa0/1418779743369/iStock_000015676634Small-646x363.jpg?format=1500w" height=300></center>
+        {% endif %}
+
+        {% if gameinfo == "DRAW!" %}
+            <center><img src="http://www.newyorker.com/wp-content/uploads/2014/07/rock-580.jpg" height=300></center>
+        {% endif %}
+
+        {% if gameinfo == "Please answer only with 'rock', 'paper', or 'scissors'." %}
+            <center><img src="http://crooksandliars.com/files/primary_image/15/04/swear-word.jpg" height=300></center>
+        {% endif %}
+
+    </body>
+</html>
