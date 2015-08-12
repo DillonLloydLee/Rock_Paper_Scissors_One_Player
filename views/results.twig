@@ -6,19 +6,45 @@
     <body>
         <h1 class="text-center">Rock Paper Scissors Game!</h1>
         <hr>
-        <h2 class="text-center">{{ gameinfo }}</h2>
+        <h3 class="text-center">{{ gameinfo[0] }}</h2>
+        <h3 class="text-center">{{ gameinfo[1] }}</h2>
 
-        {% if gameinfo == "Player One Wins!" or gameinfo == "Player Two Wins!" %}
-            <center><img src="http://static1.squarespace.com/static/548f39d4e4b09248deea77fc/t/54946c58e4b0a875f15aafa0/1418779743369/iStock_000015676634Small-646x363.jpg?format=1500w" height=300></center>
+        {% if gameinfo[0] == "You played rock!" %}
+            <center><img src="http://preview.cutcaster.com/902949015-cartoon-rock.jpg" height=200> VERSUS
         {% endif %}
 
-        {% if gameinfo == "DRAW!" %}
-            <center><img src="http://www.newyorker.com/wp-content/uploads/2014/07/rock-580.jpg" height=300></center>
+        {% if gameinfo[0] == "You played paper!" %}
+            <center><img src="http://imageenvision.com/sm/0025-0803-0517-1051_clip_art_graphic_of_a_white_copy_and_print_paper_cartoon_character_flexing_his_arm_muscles.jpg" height=200> VERSUS
         {% endif %}
 
-        {% if gameinfo == "Please answer only with 'rock', 'paper', or 'scissors'." %}
+        {% if gameinfo[0] == "You played scissors!" %}
+            <center><img src="http://4.bp.blogspot.com/-qwqZFXy1BD0/TaidU9iUUMI/AAAAAAAAADs/EDBYAjpIb7Y/s1600/scissors.gif" height=200> VERSUS
+        {% endif %}
+
+        {% if gameinfo[1] == "The computer played scissors!" %}
+            <img src="http://4.bp.blogspot.com/-qwqZFXy1BD0/TaidU9iUUMI/AAAAAAAAADs/EDBYAjpIb7Y/s1600/scissors.gif" height=200></center>
+        {% endif %}
+
+        {% if gameinfo[1] == "The computer played rock!" %}
+            <img src="http://preview.cutcaster.com/902949015-cartoon-rock.jpg" height=200></center>
+        {% endif %}
+
+        {% if gameinfo[1] == "The computer played paper!" %}
+            <img src="http://imageenvision.com/sm/0025-0803-0517-1051_clip_art_graphic_of_a_white_copy_and_print_paper_cartoon_character_flexing_his_arm_muscles.jpg" height=200></center>
+        {% endif %}
+
+        {% if gameinfo[0] == "You and the computer" %}
+            <center><img src="http://jeffcoschool.server273.com/wp-content/uploads/2014/04/no-winners.jpg" height=300></center>
+        {% endif %}
+
+        {% if gameinfo[0] == "Please answer only with" %}
             <center><img src="http://crooksandliars.com/files/primary_image/15/04/swear-word.jpg" height=300></center>
         {% endif %}
 
+        <h2 class="text-center"><strong>{{ gameinfo[2] }}</strong></h2>
+
+        <div class="text-center">
+            <a class="btn btn-default" href="/" role="button">Play Again!</a>
+        </div>
     </body>
 </html>

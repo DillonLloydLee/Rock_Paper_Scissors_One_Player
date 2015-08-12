@@ -16,31 +16,40 @@
             }
 
             if (($player_one != "ROCK") && ($player_one != "PAPER") && ($player_one != "SCISSORS")) {
-                return "Please answer only with 'rock', 'paper', or 'scissors'.";
+                $answer = array("Please answer only with", "'rock,' 'paper,' or 'scissors!'", " ");
+                return $answer;
             }
             elseif (($player_two != "ROCK") && ($player_two != "PAPER") && ($player_two != "SCISSORS")) {
-                return "Please answer only with 'rock', 'paper', or 'scissors'.";
+                $answer = array("Please answer only with", "'rock,' 'paper,' or 'scissors!'", " ");
+                return $answer;
             }
             elseif (($player_one == "ROCK") && ($player_two == "PAPER")) {
-                return "Computer Wins!";
+                $answer = array("You played rock!", "The computer played paper!", "THE COMPUTER WINS!");
+                return $answer;
             }
             elseif (($player_one == "ROCK") && ($player_two == "SCISSORS")) {
-                return "Player One Wins!";
+                $answer = array("You played rock!", "The computer played scissors!", "YOU WIN!");
+                return $answer;
             }
             elseif (($player_one == "PAPER") && ($player_two == "ROCK")) {
-                return "Player One Wins!";
+                $answer = array("You played paper!", "The computer played rock!", "YOU WIN!");
+                return $answer;
             }
             elseif (($player_one == "PAPER") && ($player_two == "SCISSORS")) {
-                return "Computer Wins!";
+                $answer = array("You played paper!", "The computer played scissors!", "THE COMPUTER WINS!");
+                return $answer;
             }
             elseif (($player_one == "SCISSORS") && ($player_two == "ROCK")) {
-                return "Computer Wins!";
+                $answer = array("You played scissors!", "The computer played rock!", "THE COMPUTER WINS!");
+                return $answer;
             }
             elseif (($player_one == "SCISSORS") && ($player_two == "PAPER")) {
-                return "Player One Wins!";
+                $answer = array("You played scissors!", "The computer played paper!", "YOU WIN!");
+                return $answer;
             }
             else {
-                return "DRAW!";
+                $answer = array("You and the computer", "played the same thing!",  "IT'S A DRAW!");
+                return $answer;
             }
 
         }
