@@ -13,7 +13,7 @@
 
     $app->get("/results", function() use ($app) {
         $this_RockPaperScissors = new RockPaperScissors;
-        $this_game = $this_RockPaperScissors->game($_GET["player_one"], $_GET["player_two"]);
+        $this_game = $this_RockPaperScissors->game($_GET["player_one"]);
         return $app["twig"]->render("results.twig", array("gameinfo" => $this_game));
     });
 
