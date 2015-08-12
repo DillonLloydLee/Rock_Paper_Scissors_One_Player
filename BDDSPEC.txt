@@ -1,38 +1,9 @@
 BDD SPEC:
 
-1. Take two inputs
-    input 1: "rock"
-    input 2: "rock"
-    output: "draw"
-1.5. Incorrect inputs result in correction message.
-    input 1: "turkey"
-    input 2: "606"
-    output: "Please answer only with 'rock', 'paper', or 'scissors'"
-2. inputs work even if capitalized
-    input 1: "ROCK"
-    input 2: "Rock"
-    output: "draw"
-3. "Paper" input beats "rock" input
-    input 1: "rock"
-    input 2: "paper"
-    output: "player 2 wins"
-4. "scissors" input beats "rock" input
-    input 1: "rock"
-    input 2: "scissors"
-    output: "player 1 wins"
-5. "paper" input beats "rock" input
-    input 1: "paper"
-    input 2: "rock"
-    output: "player 1 wins"
-6. "scissors" input beats "paper" input
-    input 1: "paper"
-    input 2: "scissors"
-    output: "player 2 wins"
-7. "rock" input beats "scissors" input
-    input 1: "scissors"
-    input 2: "rock"
-    output: "player 2 wins"
-8. "scissors" input beats "paper" input
-    input 1: "scissors"
-    input 2: "paper"
-    output: "player 1 wins"
+1. player_two input is computer assigned
+input: none
+output: "ROCK"
+2. player_two input is random
+input: none
+output: either "ROCK", "PAPER", "SCISSORS"*
+*THIS MUST BE MANUALLY EVALUATED

@@ -1,9 +1,10 @@
 <?php
     Class RockPaperScissors {
 
-        function game($player_one, $player_two) {
+        function game($player_one) {
 
             $player_one = strtoupper ( $player_one );
+            $player_two = "";
             $player_two = strtoupper ( $player_two );
 
             if (($player_one != "ROCK") && ($player_one != "PAPER") && ($player_one != "SCISSORS")) {
