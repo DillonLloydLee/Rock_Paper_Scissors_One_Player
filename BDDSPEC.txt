@@ -1,9 +1,5 @@
 BDD SPEC:
 
-1. player_two input is computer assigned
+1. player_two input is random
 input: none
-output: "ROCK"
-2. player_two input is random
-input: none
-output: either "ROCK", "PAPER", "SCISSORS"*
-*THIS MUST BE MANUALLY EVALUATED
+output: either "ROCK", "PAPER", "SCISSORS"
